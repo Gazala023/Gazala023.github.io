@@ -7,7 +7,7 @@
 body {
     font-size: 1.2rem;
     font-family: 'Work Sans', sans-serif;
-    min-height: 2000px;
+    min-height: 3000px;
 
 }
 
@@ -93,7 +93,8 @@ body {
     font-family: 'sacramento';
     font-size: 5rem;
     font-weight: bold;
-    padding-top: 0;
+    padding-top: 1%;
+    /* margin-top: 2rem; */
 }
 
 .home h3 {
@@ -133,6 +134,7 @@ body {
 }
 
 .info h2 {
+    padding-top: -10;
     color: green;
     font-family: 'sacramento';
     font-size: 5rem;
@@ -152,6 +154,19 @@ body {
     background-color: rgba(255, 255, 255, 0.2) !important;
     color: white !important;
     border: 1px solid #999;
+}
+
+.gallery {
+    background-color: #666;
+}
+
+.gallery h2 {
+    padding-top: 8rem;
+    color: green;
+    font-family: 'sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+
 }
 
 /* Media Query */
@@ -182,6 +197,10 @@ body {
         font-size: 2rem;
         text-align: center;
     }
+
+    .sticky-top {
+        overflow: hidden;
+    }
 }
 
 /* mobile phone */
@@ -194,4 +213,7 @@ body {
         padding: 45px;
         margin: 3px;
     }
-}
+    img {
+        margin-left: -5%;    
+    }
+    

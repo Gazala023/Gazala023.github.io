@@ -41,7 +41,7 @@
 
     <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
       <div class="container">
-        <a class="navbar-brand" href="#">Mishary Ayyash Abhignan - Khitan</a>
+        <a class="navbar-brand" href="#">MAA - Khitan</a>
         <button
           class="navbar-toggler border-0"
           type="button"
@@ -60,7 +60,7 @@
         >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              Mishary Ayyash Abhignan - Khitan
+              MAA- Khitan
             </h5>
             <button
               type="button"
@@ -190,11 +190,66 @@
       </div>
     </section>
 
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Galeri Foto</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos
+              rem facilis officia quas quam!
+            </p>
+          </div>
+        </div>
+
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-md-2 row-cols-1 justify-content-center">
+          <div class="col" mt-3>
+            <a href="img/Gallery/1.jpg" data-toggle="lightbox" data-caption="Mishary Ayyash Abhignan Ganteng" data-gallery="Mygallery">
+              <img
+                src="img/Gallery/thumbnail/1.jpg"
+                alt="Mishary Ayyash Abhignan Ganteng"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col" mt-3>
+            <a href="img/Gallery/2.jpg" data-toggle="lightbox" data-caption="Mishary Ayyash Abhignan Cakep" data-gallery="Mygallery">
+              <img
+                src="img/Gallery/thumbnail/2.jpg"
+                alt="Mishary Ayyash Abhignan Cakep"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col" mt-3>
+            <a href="img/Gallery/3.jpg" data-toggle="lightbox" data-caption="Mishary Ayyash Abhignan Manis" data-gallery="Mygallery">
+              <img
+                src="img/Gallery/thumbnail/3.jpg"
+                alt="Mishary Ayyash Abhignan Manis"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col" mt-3>
+            <a href="img/Gallery/4.jpg" data-toggle="lightbox" data-caption="Mishary Ayyash Abhignan Cute" data-gallery="Mygallery">
+              <img
+                src="img/Gallery/thumbnail/4.jpg"
+                alt="Mishary Ayyash Abhignan Cute"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
     <script>
       simplyCountdown(".simply-countdown", {
@@ -209,6 +264,19 @@
           minutes: { menit: "minute", plural: "menit" },
           seconds: { detik: "second", plural: "detik" },
         },
+      });
+    </script>
+
+    <script>
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      offcanvas.addEventListener("show.bs.offcanvas", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
       });
     </script>
   </body>
